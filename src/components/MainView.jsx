@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+
 import Error from "./ErrorMessages";
 import Success from "./SuccessMessages";
 import { BACK_URL } from "../configuration/config";
@@ -19,7 +20,7 @@ export class MainView extends Component {
     event.preventDefault();
     debugger;
     await axios
-      .post(`${BACK_URL}/validator`, { ...this.state.data })
+      .post(`${BACK_URL}/check/data`, { ...this.state.data })
       .then(res => {
         if (res.status === 200 && res.data) {
           debugger;

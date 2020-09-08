@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./App.css";
+import axios from "axios";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MainView from "./components/MainView";
-import axios from "axios";
 import { BACK_URL } from "./configuration/config";
+import "./App.css";
 
 export class App extends Component {
   constructor(props) {
