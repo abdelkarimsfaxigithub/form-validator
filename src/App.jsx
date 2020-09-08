@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MainView from "./components/MainView";
 import axios from "axios";
-//import { BACK_URL } from './configuration/config';
+import { BACK_URL } from "./configuration/config";
 
 export class App extends Component {
   constructor(props) {
@@ -15,13 +15,13 @@ export class App extends Component {
 
   async getFormData() {
     await axios
-      .get(`http://127.0.0.1:4000/get/form`)
-      .then((res) => {
+      .get(`${BACK_URL}/get/form`)
+      .then(res => {
         if (res.status === 200 && res.data) {
           this.setState({ data: res.data });
         }
       })
-      .catch((e) => {
+      .catch(e => {
         console.error(e);
       });
   }

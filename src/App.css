@@ -31,10 +31,10 @@
     transform: rotate(360deg);
   }
 }
-.navbar {
-  height: 50px;
-}
-#title{
+
+#title {
+  font-family: Georgia, arial, serif;
+  font-size: 38px;
   color: #fff;
 }
 
