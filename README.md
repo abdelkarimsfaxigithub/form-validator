@@ -29,6 +29,8 @@ Then, get in the project directory.
 ```bash
 $ cd Form-validator
 ```
+And then install dependencies with yarn or npm.
+
 ```bash 
 $ nvm use 12
 ```
@@ -36,7 +38,7 @@ $ nvm use 12
 $ npm install
 ``` 
 ```bash
-npm start
+$ npm start
 ```
 
 ## Browser Support
