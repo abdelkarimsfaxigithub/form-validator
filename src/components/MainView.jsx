@@ -18,12 +18,10 @@ export class MainView extends Component {
 
   async handleFormSubmit(event) {
     event.preventDefault();
-    debugger;
     await axios
       .post(`${BACK_URL}/check/data`, { ...this.state.data })
       .then(res => {
         if (res.status === 200 && res.data) {
-          debugger;
           if (res.data.isValid) {
             this.setState({ error: [] });
             this.setState({ shouldRedirect: true });
@@ -36,7 +34,6 @@ export class MainView extends Component {
         }
       })
       .catch(e => {
-        debugger;
         console.error(e);
       });
   }
