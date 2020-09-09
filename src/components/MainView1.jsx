@@ -5,7 +5,7 @@ import Error from "./ErrorMessages";
 import Success from "./SuccessMessages";
 import { BACK_URL } from "../configuration/config";
 
-export class MainView extends Component {
+export class MainViewV1 extends Component {
   constructor(props) {
     super(props);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -108,4 +108,4 @@ export class MainView extends Component {
     );
   }
 }
-export default MainView;
+export default MainViewV1;
